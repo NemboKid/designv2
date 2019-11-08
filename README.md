@@ -1,5 +1,5 @@
-My me/redovisa
+Me/redovisa
 
-===================
+--------------------
 
-A short text about the repo and about myself
+Here will later follow updates about this repo.
