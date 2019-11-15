@@ -1,25 +1,34 @@
 ---
 title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+
+
 ---
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+### Några korta ord om mig själv
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/startupsicilia.jpg?w=400" class="right" caption="Bild över Italien"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Mitt namn är Filip. Jag är 27 år och bor för närvarande i **Milano**. Har alltid haft ett intresse för Italien och har tidigare bott i både *Palermo* och *Rom*. Jag är ursprungligen från Norrköping och återvänder då och då när jag hälsar på föräldrarna.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Är nästan för intresserad av fotboll och lägger all ledig tid på att följa mina lag **Milan** och **Djurgården**. Annars är jag väldigt intresserad av teknik och har senaste åren sysslat mycket med blockchain och byggt decentraliserade appar (dApps) på blockkedjan **Ethereum**. Började plugga detta program eftersom jag ville lära mig att programmera bättre och framför allt lära mig om webb, databaser etc. Har varit superkul inledningsvis!
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Jobbade i några år på **Landshypotek Bank** och hade hand om deras internetbank och olika relaterade system/tjänster. Var väl inte superkul och jag kände att jag ville något mer och utvecklas i en annan riktning. Så jag hoppade av allt och flyttade till Italien (för tredje gången). Hoppas att kunna "landa" i livet om ett par år. Men jag har fortfarande så mycket energi att jag inte klarar av att sitta på ett kontor och vara nöjd. Vill helst gå den entreprenöriella banan, men det är lättare sagt än gjort.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Jag har sedan innan en ekonomie kandidat från Stockholms Universitet och var under den tiden fokuserad på finans och aktiehandel. Sedan snöade jag in på blockchain och tog en master från University of Nicosia. Men nu är det dags för programmering och att djupdyka där. Jag är intresserad av mycket och lär mig gärna nya saker. Senaste månaderna har det varit mycket maskininlärning, där jag faktiskt hade en del hjälp av Python-kursen jag just läste. Har använt mig av Jupyter och byggt olika modeller genom något som kallas PyTorch. Modellerna blir bättre och bättre - nyckeln är att ha kvalitativ data som inte bara ger tillbaka ett brus. Är mycket common sense, sedan tar olika Python-bibliotek hand om resten.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+Är annars intresserad av företagande och att bygga saker (är därför väldigt praktiskt att kunna programmera). Har ett företag i Stockholm tillsammans med en kompis, men just nu är jag fokuserad på ett projekt som jag bygger i Italien. PHP-kursen lärde mig att bygga en vettig hemsida, och vi får se om den går live snart. Jag ser fram emot att lära mig mer om design och få mer struktur på CSS. Grid känns sjukt nödvändigt, så jag kan knappt bärga mig på att sätta igång med den här kursen!
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
+(Lekte lite med markdown här, därför jag **fet-** och *kursivmarkerade* vissa saker.)
 
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+På återhörande!
