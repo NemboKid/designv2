@@ -1,0 +1,36 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    color: @colorBody;
+    background-color:@bgColorHtml;
+    font: 100.01%/1 @fontFamilyBody;
+    height: 100%;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.wrap-all {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: gray;
+}
+
+.outer-wrap-main {
+    max-width: 1100px;
+    margin: auto;
+}
