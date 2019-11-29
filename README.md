@@ -2,7 +2,7 @@ Me/redovisa
 
 --------------------
 
-Here will later follow updates about this repo.
+Updates of this repo.
 
 
 v 3.0.0 (19-11-30)
