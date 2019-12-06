@@ -4750,14 +4750,55 @@ hr {
  */
 html {
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: #424242;
 }
 body {
   margin: 0;
   padding: 0;
   color: #0009;
-  background-color: #fff;
+  background-color: #365D90;
 }
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+* Header layout
+*/
+/**
+ * General layout
+ */
+.site-logo-text a {
+  color: #fff;
+  text-decoration: none;
+}
+.rm-navbar ul:not(.rm-small) {
+  text-decoration: none;
+  font-weight: bold;
+}
+.region-header-col-2 {
+  width: 60%;
+  float: left;
+}
+.region-header-col-1,
+.region-header-col-3 {
+  width: 20%;
+  float: left;
+}
+.rm-small-wrapper,
+.rm-clicked {
+  color: #333;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+/**
+ * Footer layout
+ */
 /**
  * Import the vertical grid.
  */
@@ -5374,17 +5415,27 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 body {
-  font: 16px/1.5 "serif", "sans-serif";
+  font: 16px/1.5 "Roboto", "Verdana";
 }
-.inner-wrap-header {
-  background-color: #4c4c4c;
+.inner-wrap {
+  background-color: #28576A;
 }
-.inner-wrap-footer .row,
-.outer-wrap-footer {
-  background-color: #8cc0c0 !important;
+.outer-wrap-footer,
+.inner-wrap-footer .row {
+  background-color: #215B4F;
 }
 .rm-navbar {
   color: white;
+}
+.rm-desktop li:hover {
+  background-color: #215B4F;
+  color: #333;
+}
+.region-footer h4 {
+  border-bottom: 1px #2D8C79 solid;
+}
+a {
+  color: #333;
 }
 .rm-desktop li a:hover {
   text-decoration: none;
@@ -5395,7 +5446,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "serif";
+  font-family: "Arial";
   margin-top: 24px;
   margin-bottom: 24px;
 }

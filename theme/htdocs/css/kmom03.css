@@ -4941,19 +4941,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.rm-navbar ul:not(.rm-small) {
-  text-decoration: none;
-  font-weight: bold;
-}
-.rm-navbar li:hover:not(.region-header-col-3) {
-  z-index: 1;
-  background-color: #0009;
-  font-weight: bold;
-  text-decoration: none;
-}
 .rm-small-wrapper,
 .rm-clicked {
-  color: red;
+  color: #333;
   font-size: 22px;
 }
 img {

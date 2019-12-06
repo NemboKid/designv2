@@ -4750,7 +4750,7 @@ hr {
  */
 html {
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: #424242;
 }
 body {
   margin: 0;
@@ -4758,6 +4758,46 @@ body {
   color: #0009;
   background-color: #fff;
 }
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+* Header layout
+*/
+/**
+ * General layout
+ */
+.site-logo-text a {
+  text-decoration: none;
+}
+.rm-navbar ul:not(.rm-small) {
+  text-decoration: none;
+  font-weight: bold;
+}
+.region-header-col-2 {
+  width: 60%;
+  float: left;
+}
+.region-header-col-1,
+.region-header-col-3 {
+  width: 20%;
+  float: left;
+}
+.rm-small-wrapper,
+.rm-clicked {
+  color: #333;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+/**
+ * Footer layout
+ */
 /**
  * Import the vertical grid.
  */
@@ -4943,7 +4983,7 @@ body {
 }
 .rm-small-wrapper,
 .rm-clicked {
-  color: #333;
+  color: #C53D39;
   font-size: 22px;
 }
 img {
@@ -5374,17 +5414,34 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 body {
-  font: 16px/1.5 "serif", "sans-serif";
+  font: 16px/1.5 "Segoe UI", Roboto, "Helvetica Neue";
 }
-.inner-wrap-header {
-  background-color: #4c4c4c;
+.inner-wrap {
+  background-color: #f0f0f0;
+  color: #333;
 }
-.inner-wrap-footer .row,
+.outer-wrap-footer,
+.inner-wrap-footer .row {
+  background-color: #fff;
+}
 .outer-wrap-footer {
-  background-color: #8cc0c0 !important;
+  border-top: #C53D39 3px solid;
 }
 .rm-navbar {
-  color: white;
+  color: #333;
+}
+.rm-desktop li:hover {
+  color: #C53D39;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #90312E;
+}
+a {
+  color: #333;
 }
 .rm-desktop li a:hover {
   text-decoration: none;
@@ -5395,7 +5452,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "serif";
+  font-family: "Roboto";
   margin-top: 24px;
   margin-bottom: 24px;
 }

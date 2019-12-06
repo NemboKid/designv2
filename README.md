@@ -5,7 +5,7 @@ Me/redovisa
 Updates of this repo.
 
 
-v 3.0.0 (19-11-30)
+v 4.0.0 (19-12-06)
 -----------------
 
-* Added a grid, both horizontal and vertical, and improved the responsive parts.
+* Colors, colors, colors.
