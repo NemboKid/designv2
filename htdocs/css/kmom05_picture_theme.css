@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for colorful design.
+ * Stylesheet for design kmom05, pictures.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom05 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -4727,21 +4727,6 @@ template {
 /**
  * Internal self contained modules, save in directory module/.
  */
-/*!
- * Stylesheet for design kmom01.
- *
- * This stylesheet is for the design course and kmom01. Fill it with style
- * to style up the website so it is useable.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -4750,54 +4735,14 @@ hr {
  */
 html {
   overflow-y: scroll;
-  background-color: #424242;
+  background-color: #f0f0f0;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #0009;
-  background-color: #8BB266;
-}
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/**
-* Header layout
-*/
-/**
- * General layout
- */
-.site-logo-text a {
-  text-decoration: none;
-}
-.rm-navbar ul:not(.rm-small) {
-  text-decoration: none;
-  font-weight: bold;
-}
-.region-header-col-2 {
-  width: 60%;
-  float: left;
-}
-.region-header-col-1,
-.region-header-col-3 {
-  width: 20%;
-  float: left;
-}
-.rm-small-wrapper,
-.rm-clicked {
   color: #333;
-  font-size: 18px;
+  background-color: #fff;
 }
-img {
-  max-width: 100%;
-}
-/**
- * Footer layout
- */
 /**
  * Import the vertical grid.
  */
@@ -5413,37 +5358,153 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * Enable all default typographic elements.
      */
 }
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
 body {
-  font: 16px/1.5 'Open Sans', 'Libre Franklin';
+  font: 16px/1.5 'Open Sans', 'Libre Franklin', 'Montserrat';
 }
-.inner-wrap {
-  background-color: #784D83;
-  color: #333;
+.inner-wrap-header {
+  background-color: #f0f0f0;
 }
-.outer-wrap-footer,
-.inner-wrap-footer .row {
-  background-color: #784D83;
+.inner-wrap-footer .row,
+.outer-wrap-footer {
+  background-color: #f0f0f0;
 }
 .rm-navbar {
-  color: #8BB266;
+  color: #b52e2b;
+  font-weight: bold;
+  text-decoration: none;
 }
 .rm-desktop li:hover {
-  background-color: #C6B972;
-  color: #9D63AB;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  border-bottom: 2px solid #C6B972 !important;
-  font-family: 'Roboto', 'sans-serif' !important;
-}
-a {
-  color: #333;
-}
-.rm-desktop li a:hover {
   text-decoration: none;
+  background-color: #333;
+  color: #f0f0f0;
 }
 h1,
 h2,
@@ -5451,7 +5512,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto";
+  font-family: "serif";
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5731,6 +5792,17 @@ hr::after {
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: 1px dotted #b52e2b !important;
+  font-family: 'Roboto', 'sans-serif' !important;
+}
+a {
+  text-decoration: none;
 }
 /**
  * My own settings, not currently in their own module.

@@ -20,14 +20,19 @@ return [
             "title" => "Diverse rapporter",
         ],
         [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Blogginlägg",
+        ],
+        [
             "text" => "Redovisning",
             "url" => "redovisning",
             "title" => "Redovisningstexter från kursmomenten.",
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "Kmom04",
-                        "url" => "redovisning/kmom04",
+                        "text" => "Kmom05",
+                        "url" => "redovisning/kmom05",
                         "title" => "Redovisning för kmom04.",
                     ],
                 ],

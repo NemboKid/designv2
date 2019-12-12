@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for colorful design.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -4756,7 +4756,7 @@ body {
   margin: 0;
   padding: 0;
   color: #0009;
-  background-color: #365D90;
+  background-color: #8BB266;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -4772,7 +4772,6 @@ body {
  * General layout
  */
 .site-logo-text a {
-  color: #fff;
   text-decoration: none;
 }
 .rm-navbar ul:not(.rm-small) {
@@ -5415,24 +5414,30 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 body {
-  font: 16px/1.5 "Roboto", "Verdana";
+  font: 16px/1.5 'Open Sans', 'Libre Franklin';
 }
 .inner-wrap {
-  background-color: #28576A;
+  background-color: #784D83;
+  color: #333;
 }
 .outer-wrap-footer,
 .inner-wrap-footer .row {
-  background-color: #215B4F;
+  background-color: #784D83;
 }
 .rm-navbar {
-  color: white;
+  color: #8BB266;
 }
 .rm-desktop li:hover {
-  background-color: #215B4F;
-  color: #333;
+  background-color: #C6B972;
+  color: #9D63AB;
 }
-.region-footer h4 {
-  border-bottom: 1px #2D8C79 solid;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: 2px solid #C6B972 !important;
+  font-family: 'Roboto', 'sans-serif' !important;
 }
 a {
   color: #333;
@@ -5446,7 +5451,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arial";
+  font-family: "Roboto";
   margin-top: 24px;
   margin-bottom: 24px;
 }

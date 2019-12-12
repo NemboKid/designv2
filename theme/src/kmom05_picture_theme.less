@@ -1,0 +1,163 @@
+/*!
+ * Stylesheet for design kmom05, pictures.
+ *
+ * This stylesheet is for the design course and kmom05 where we use LESS.
+ */
+
+
+
+ /**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+// @import "module/kmom01.less";
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/base_kmom03.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout_default.less";
+// @import "layout/responsive_default.less";
+// @import "layout/layout.less";
+// @import "layout/layout_kmom02.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+.inner-wrap-header {
+    background-color: #f0f0f0;
+}
+
+.inner-wrap-footer .row, .outer-wrap-footer {
+    background-color: #f0f0f0;
+}
+
+.rm-navbar{
+    color: #b52e2b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rm-desktop li:hover {
+    text-decoration: none;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+#desinax-hgrid.activateDefaultTypography();
+
+
+
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    border-bottom: 1px dotted #b52e2b !important;
+    font-family: 'Roboto', 'sans-serif' !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+//Adapt grid to my style
+@fontFamilyBody: 'Open Sans', 'Libre Franklin', 'Montserrat';
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ //
+ @bgColorHtml: #f0f0f0;
+ // @bgColorBody: #007;
+ @colorBody: #333;
