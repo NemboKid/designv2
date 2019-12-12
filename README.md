@@ -5,7 +5,7 @@ Me/redovisa
 Updates of this repo.
 
 
-v 4.0.0 (19-12-06)
+v 5.0.0 (19-12-12)
 -----------------
 
-* Colors, colors, colors.
+* Pictures
