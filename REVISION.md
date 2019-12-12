@@ -19,3 +19,15 @@ v 3.0.0 (19-11-30)
 -----------------
 
 * Adding all at once for kmom03
+
+
+v 4.0.0 (XXX)
+-----------------
+
+* Forgot to update
+
+
+v 5.0.0 (19-12-12)
+-----------------
+
+* Adding all at once for kmom05
