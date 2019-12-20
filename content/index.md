@@ -17,7 +17,7 @@ Min me-sida i kursen design
 
 ### Några korta ord om mig själv
 
-[FIGURE src="image/startupsicilia.jpg?w=400" class="right" caption="Bild över Italien"]
+[FIGURE src="image/startupsicilia.jpg?w=400" class="right"]
 
 Mitt namn är Filip. Jag är 27 år och bor för närvarande i **Milano**. Har alltid haft ett intresse för Italien och har tidigare bott i både *Palermo* och *Rom*. Jag är ursprungligen från Norrköping och återvänder då och då när jag hälsar på föräldrarna.
 

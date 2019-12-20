@@ -31,9 +31,9 @@ return [
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "Kmom05",
-                        "url" => "redovisning/kmom05",
-                        "title" => "Redovisning för kmom04.",
+                        "text" => "Kmom06",
+                        "url" => "redovisning/kmom06",
+                        "title" => "Redovisning för kmom06.",
                     ],
                 ],
             ],

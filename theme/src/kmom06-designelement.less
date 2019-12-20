@@ -1,0 +1,219 @@
+/*!
+ * Designelement kmom06.
+ *
+ * This stylesheet is for the design course and kmom05 where we use LESS.
+ */
+
+
+
+ /**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+// @import "module/kmom01.less";
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base_kmom03.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout_default.less";
+// @import "layout/responsive_default.less";
+// @import "layout/layout.less";
+// @import "layout/layout_kmom02.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+.inner-wrap-header, .row {
+    background-color: #eee;
+    box-shadow: 0 4px 2px -2px #C9C4C4;
+}
+
+.inner-wrap-footer .row, .outer-wrap-footer {
+    background-color: #eee;
+    box-shadow: inset 0px 7px 3px -3px #C9C4C4;
+}
+
+.inner-wrap-main .row {
+    background-color: #eee;
+    -webkit-box-shadow: 0 0 5px 2px #C9C4C4;
+    -moz-box-shadow: 0 0 5px 2px #C9C4C4;
+    box-shadow: 0 0 5px 2px #C9C4C4;
+    //box-shadow: inset 0px 7px 3px -3px #C9C4C4;
+}
+
+select,
+code,
+fieldset {
+    background-color: #eee;
+    -webkit-box-shadow: 0 0 5px 2px #C9C4C4;
+    -moz-box-shadow: 0 0 5px 2px #C9C4C4;
+    box-shadow: 0 0 5px 2px #C9C4C4;
+}
+
+h1:before {
+    content: '\2022';
+    color: #74276D;
+    padding-right: 2%;
+    // display: block;
+}
+
+.rm-navbar{
+    color: #74276D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rm-desktop li:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    color: white;
+}
+
+#desinax-hgrid.activateDefaultTypography();
+
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+h2:before,
+h3:before,
+h4:before,
+h5:before {
+    color: #74276D;
+    border: none;
+    content: "\00BB";
+    padding-right: 2%;
+    // font-family: 'Roboto', 'sans-serif';
+}
+
+h1 {
+    border-bottom: none;
+    border: solid 0px #CCC;
+    position: relative;
+}
+
+h4 {
+    border: solid 0px #CCC;
+    border-bottom: none;
+    position: relative;
+}
+
+h1:after,
+h4:after {
+    padding: right: 2%;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.blog-list a {
+    text-decoration: none;
+}
+
+.block.toc a:hover {
+    color: #eee;
+}
+
+.block.toc li:hover {
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    width: 80%;
+    color: #eee;
+    white-space: nowrap;
+}
+
+
+//Adapt grid to my style
+@fontFamilyBody: 'Palatino', 'Helvetica', 'Arial', 'sans-serif';
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ //
+ @bgColorHtml: #f0f0f0;
+ // @bgColorBody: #007;
+ @colorBody: #333;

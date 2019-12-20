@@ -10,7 +10,7 @@ Dagens Bild 1
 
 
 [FIGURE src="image/tifo.jpg?w=100%&h=1100&crop-to-fit&sharpen&q=55"]
-För denna bild försökte jag öka skärpan och kvaliteten på färgerna lite.
+För denna bild försökte jag öka skärpan och kvaliteten på färgerna lite. Den blev lite större, men jag ville ändå testa.
 
 Detta är till exempel från Milan-Inter tidigare i höstas och en bild som jag tog på koreografin som Milan-supportrarna bjöd på.
 
