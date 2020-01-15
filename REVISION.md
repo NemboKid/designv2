@@ -31,3 +31,8 @@ v 5.0.0 (19-12-12)
 -----------------
 
 * Adding all at once for kmom05
+
+v 10.0.0 (20-01-15)
+-----------------
+
+* Adding all at once for kmom10
